@@ -23,6 +23,24 @@ class HomeController extends Controller
             'produits'   => $produits,
         ]);
     }
+    
+    public function contactAction() {
+        $hello = 'coucou';
+        
+        return $this->render('Home/contact.php', [
+            'hello22' => $hello
+        ]);
+    }
+    
+    public function testAction()
+    {
+        $hello = 'coucou';
+        
+        return $this->render('Home/test.php', [
+            'hello22' => $hello,
+            'jesaispas' => 3*9,
+        ]);
+    }
 
     public function articlesAction()
     {

@@ -26,4 +26,14 @@ $routes = [
         'controller' => 'SecurityController',
         'action'     => '404Action',
     ],
+    'test'        => [
+        'url'        => '/test',
+        'controller' => 'HomeController',
+        'action'     => 'testAction',
+    ],
+    'contact'        => [
+        'url'        => '/contact',
+        'controller' => 'HomeController',
+        'action'     => 'contactAction',
+    ],
 ];
